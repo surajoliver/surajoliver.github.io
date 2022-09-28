@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+$my-red : #f44336;
+
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.7rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.row {
+    display: block;
+    text-align: center;
+
+    &>* {
+        flex-basis: 100%;
+        // min-width: 15em;
+        align-items: flex-start;
+        // align-content: flex-start;
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.spacing>*+* {
+    margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-text, white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, #000);
+    border-radius: .25em;
+    transition:
+        transform 500ms ease-in-out,
+        opacity 500ms linear;
+
+    &:hover,
+    &:focus {
+        opacity: .8;
+        transform: scale(1.05);
+    }
+}
+
+
+.primary-title {
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 3.5rem);
+    line-height: 1;
+
+}
+
+.grid-title {
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 3.5rem);
+    line-height: 1;
+}
+
+nav.navbar {
+
+    background-color: $my-red;
+    //outline-top: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+
+
+    ul.nav-list {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+        }
+    }
+}
+
+// hero section
+section.hero {
+    background-color: $my-red;
+    text-align: center;
+    color: white;
+    padding: 5rem 0;
+
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    p.hero-text {
+        font-size: 1.5rem;
+        margin: 2rem;
+
+    }
+
+}
+
+
+article.project {
+    padding: 3rem 0;
+    //&>* {}
+
+    i {
+        font-size: 10rem;
+        color: $my-red;
+    }
+
+}
+
+
+.bg-gray {
+    background-color: #ccc;
+}
+
+
+section.quote-of-day {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    background-color: #aaa;
+    padding: 10rem 0;
+    margin: auto;
+    text-align: center;
+}
+
+footer.footer {
+    padding: 5rem;
+    text-align: center;
+
+}
+
+@media (min-width: 620px) {
+
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        // flex-wrap: wrap;
+        // align-items: center;
+
+
+        &>* {
+            flex-basis: 40%;
+            // min-width: 15em;
+            align-items: flex-start;
+            // align-content: flex-start;
+        }
+    }
+
+    article.project {
+        padding: 3rem 0;
+
+        .col-project-body {
+            flex-basis: 60%;
+        }
+
+        .col-project-icon {
+            flex-basis: 30%;
+        }
+
+        // flex-basis: 100%;
+        // align-items: flex-start;
+
+
+    }
+}
