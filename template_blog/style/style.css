@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header,
+h1,
+h2,
+h4,
+p,
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.7rem;
+}
+
+.tag {
+  background-color: #333;
+  color: #eee;
+  padding: 0.1rem 0.5rem;
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+}
+
+.padding_1010 {
+  padding: 1rem 0 1rem 0;
+}
+
+.card {
+  width: 90%;
+  margin: 2rem auto;
+  box-shadow: 1rem 1rem 2rem 0.5rem rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(200, 200, 200, 0.7);
+}
+.card img {
+  width: 100%;
+}
+
+section h2.section-title {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 0.6rem;
+}
+section .section-desc {
+  margin-bottom: 1.5rem;
+  line-height: 0.8rem;
+}
+section a.btn {
+  display: inline-block;
+  border: 1px solid rgba(100, 100, 100, 0.5);
+  padding: 0.7rem 1.3rem;
+  margin: 1rem auto 1rem 0;
+}
+section a.btn:hover {
+  background-color: rgba(100, 100, 100, 0.6);
+  border: 1px solid #555;
+  transition-duration: 2s;
+}
+section p.comments {
+  margin-top: 1.7rem;
+  float: right;
+}
+section p.comments span {
+  background-color: rgb(60, 60, 60);
+  color: rgb(200, 200, 200);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+h2.card-title {
+  background-color: rgba(200, 200, 200, 0.3);
+  padding: 1rem;
+  font-weight: 100;
+}
+
+header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  padding: 5rem;
+  text-align: center;
+}
+header h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+li.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+}
+li.post-item img {
+  width: 20%;
+  height: auto;
+}
+li.post-item div {
+  flex: 1;
+}
+li.post-item:hover {
+  background-color: #ccc;
+}
+
+section.tags div {
+  padding: 1rem;
+}
+section.tags div span.tag {
+  background-color: #eee;
+  color: #333;
+  font-size: 0.6rem;
+  padding: 0.1rem 0.5rem;
+}
+section.tags div span.tag.active {
+  background-color: #333;
+  color: #eee;
+  font-size: 1rem;
+}
+
+footer.footer {
+  background-image: linear-gradient(to right, rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.6));
+  padding: 3rem 1rem;
+}
+footer.footer .btn-prev-next {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0.5;
+}
+footer.footer .btn-prev-next.active {
+  background-color: rgba(100, 100, 100, 0.9);
+  opacity: 0.9;
+}
+
+@media (min-width: 800px) {
+  .split {
+    display: flex;
+  }
+  li.post-item div {
+    line-height: 1rem;
+    font-size: 1vw;
+  }
+}/*# sourceMappingURL=style.css.map */
