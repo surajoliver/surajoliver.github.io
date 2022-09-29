@@ -6,11 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test JS</title>
+    <style>
+        div.slide {
+            display: absolute;
+            padding: 3rem 10rem;
+            width: 10rem;
+            font-size: 3rem;
+            border: 5px solid blue;
+            background-color: blanchedalmond;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="slide">
+        Slide 1
+    </div>
+    <div class="slide">
+        Slide 2
+    </div>
+    <div class="slide">
+        Slide 3
+    </div>
+
     <script>
-        document.write("Hello world");
+        document.write("<br/>Hello world");
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
     </script>
 </body>
 
