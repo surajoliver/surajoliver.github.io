@@ -7,27 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test JS</title>
     <style>
-        div.slide {
-            display: absolute;
-            padding: 3rem 10rem;
-            width: 10rem;
-            font-size: 3rem;
-            border: 5px solid blue;
-            background-color: blanchedalmond;
-        }
     </style>
 </head>
 
 <body>
-    <div class="slide">
-        Slide 1
-    </div>
-    <div class="slide">
-        Slide 2
-    </div>
-    <div class="slide">
-        Slide 3
-    </div>
+
+    <section class="hero">
+        <div class="slide-container">
+            <div class="slide">
+                <img src="/img/band1.jpg" />
+                <p>New york</p>
+            </div>
+            <div class="slide">
+                <img src="/img/band2.jpg" />
+                <p>London</p>
+            </div>
+            <div class="slide">
+                <img src="/img/band3.jpg" />
+                <p>Paris</p>
+            </div>
+
+        </div>
+
+    </section>
 
     <script>
         document.write("<br/>Hello world");
