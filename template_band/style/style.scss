@@ -1,0 +1,301 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+div,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90vw;
+    margin: auto;
+}
+
+// Header and Navbar
+.header {
+    background-color: #222;
+}
+
+nav ul.nav-list {
+    display: flex;
+    list-style: none;
+
+    li.nav-item a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem 1rem;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: #888;
+            transition-duration: 500ms;
+        }
+    }
+}
+
+// Hero - Automatic slideshow
+
+.slide-container {
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: block;
+    width: 100%;
+
+    img {
+        filter: brightness(50%);
+    }
+
+    div,
+    p {
+        display: inline-block;
+        position: absolute;
+
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+        bottom: 3rem;
+        left: 2rem;
+        background-color: rgba(50, 50, 50, .8);
+        padding: .25rem;
+
+    }
+}
+
+
+section {
+    .section-title {
+        text-align: center;
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .section-desc {
+        text-align: center;
+        font-style: italic;
+        margin: 1.5rem;
+        color: #888;
+    }
+}
+
+// Band
+section.band {
+    padding: 5vh 0 15vh;
+
+    .band-members {
+        width: 50vw;
+        margin: auto;
+
+        & p {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    // div.band-members {
+    //     display: flex;
+    //     gap: 2rem;
+
+    //     div {
+    //         flex: 1;
+    //         text-align: center;
+    //     }
+
+    // }
+
+}
+
+// Tour
+section.tour {
+    background-color: #222;
+    padding: 10vh 0;
+
+    .section-title {
+        color: white;
+    }
+
+    div.slots {
+        background-color: #fff;
+        padding: .8rem 1.5rem;
+
+        &>p {
+            display: inline-block;
+        }
+
+        .highlight {
+            background-color: red;
+            color: white;
+            padding: 0 .5rem;
+            border-radius: .3rem;
+        }
+    }
+}
+
+.slots+.slots {
+    border-top: 1px solid #ccc;
+
+}
+
+.tour-location {
+    background-color: white;
+    margin: 2rem 0;
+
+    img {
+        display: block;
+        margin: auto;
+
+        width: 100%;
+        height: auto;
+        max-height: 15rem;
+        object-fit: cover;
+    }
+
+    &>div {
+        margin: 1rem;
+    }
+
+    .tour-name {
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+
+    .tour-date {
+        color: #777;
+        margin-bottom: .5rem;
+    }
+
+    .tour-desc {
+        line-height: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn-buy-tickets {
+        padding: .4rem .8rem;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.mb-2rem {
+    margin-bottom: 2rem;
+}
+
+// Contact
+section.contact {
+    padding: 10vh 0;
+
+    & i {
+        display: inline-block;
+    }
+
+    & p.contact-method {
+        display: inline-block;
+    }
+
+    .contact-form {
+
+        input[type="text"] {
+            display: block;
+            width: 100%;
+            margin: .5rem 0 0 0;
+            padding: .5rem;
+            border: 1px solid #bbb;
+        }
+
+        input[type="submit"] {
+            padding: .3rem .8rem;
+            margin: 1rem 0 2rem;
+            background-color: #000;
+            color: #fff;
+            float: right;
+        }
+    }
+
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+@media(min-width: 600px) {
+    .row {
+        display: flex;
+    }
+
+    // Band
+    section.band {
+        div.band-members {
+            width: 100%;
+            display: flex;
+            gap: 2rem;
+
+            div {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    // Tour location
+    .tour-location {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & img {
+            //            object-fit: cover;
+            height: 30vw;
+        }
+
+        &+& {
+            margin-left: 1rem;
+        }
+    }
+
+    // Contact
+    section.contact .container {
+        display: flex;
+
+        &>* {
+            flex: 1;
+        }
+
+        &>form>div {
+            display: flex;
+            gap: .4rem;
+        }
+    }
+
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-Band</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#band">Band</a></li>
+                <li class="nav-item"><a href="#tour">Tour</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#">Merch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slide-container">
+            <div class="slide">
+                <img src="/img/band1.jpg" />
+                <p>New york</p>
+            </div>
+            <div class="slide">
+                <img src="/img/band2.jpg" />
+                <p>London</p>
+            </div>
+            <div class="slide">
+                <img src="/img/band3.jpg" />
+                <p>Paris</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="band" class="band">
+        <div class="container">
+            <h1 class="section-title">The Band</h1>
+            <p class="section-desc">We love music</p>
+            <div class="band-body">
+                <p>This is a fictional band website. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium, incidunt sapiente. Aperiam vitae hic ad facere laboriosam reiciendis deserunt
+                    distinctio non saepe dolor asperiores exercitationem, ratione numquam temporibus libero natus
+                    voluptates earum optio ea nihil. Adipisci quod voluptatem fugiat culpa temporibus ad, rem nobis
+                    earum accusantium qui hic natus distinctio vitae aliquam consequatur quae consequuntur reprehenderit
+                    sint velit quidem provident reiciendis delectus quibusdam. Deleniti dolor nihil qui, esse
+                    repudiandae error porro necessitatibus cum nulla ratione numquam labore odit natus reiciendis
+                    provident magni, quam quasi magnam beatae obcaecati quidem rerum dolorum sunt ex. Ut pariatur velit
+                    vero exercitationem officiis beatae expedita?</p>
+            </div>
+            <div class="band-members">
+                <div>
+                    <p>AJ McLean</p>
+                    <img src="img/aj mclean.jpeg" alt="">
+                </div>
+                <div>
+                    <p>Kevin Richardson</p>
+                    <img src="img/kevin richardson.jpeg" alt="">
+                </div>
+                <div>
+                    <p>Nick Carter</p>
+                    <img src="img/nick carter.jpeg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tour" class="tour">
+        <h2 class="section-title">Tour Dates</h2>
+        <p class="section-desc">Remember to book your tickets!</p>
+        <div class="container">
+            <div class="slots">
+                <p class="slot-details">September</p>
+                <p class="status highlight">Sold out</p>
+            </div>
+            <div class="slots">
+                <p class="slot-details">October</p>
+                <p class="status highlight">Sold out</p>
+            </div>
+            <div class="slots">
+                <p class="slot-details">November</p>
+                <p class="status"></p>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="tour-location">
+                    <img src="img/new york.jpeg" alt="">
+                    <div>
+                        <p class="tour-name">New York</p>
+                        <p class="tour-date">Fri 27, Nov 2016</p>
+                        <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            laboriosam.
+                        </p>
+                        <a href="" class="btn-buy-tickets">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="tour-location">
+                    <img src="img/paris.jpeg" alt="">
+                    <div>
+                        <p class="tour-name">Paris</p>
+                        <p class="tour-date">Sun 29, Nov 2016</p>
+                        <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            laboriosam.
+                        </p>
+                        <a href="" class="btn-buy-tickets">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="tour-location">
+                    <img src="img/london.jpeg" alt="">
+                    <div>
+                        <p class="tour-name">London</p>
+                        <p class="tour-date">Fri 27, Nov 2016</p>
+                        <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            laboriosam.
+                        </p>
+                        <a href="" class="btn-buy-tickets">Buy Tickets</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">Fan? Drop a note!</p>
+
+        <div class="container">
+            <div>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p class="contact-method">Bengaluru, India</p><br />
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p class="contact-method">Phone: #91-9538295937</p><br />
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p class="contact-method">Email: suraj.oliver@gmail.com</p><br />
+            </div>
+
+            <form action="mailto:suraj.oliver@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <input type="text" name="message" id="message" placeholder="Message">
+
+                <input type="submit" name="submit" value="SEND">
+            </form>
+        </div>
+
+        <img src="img/nagarbhavi.png" alt="">
+    </section>
+
+    <footer>
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-twitter"></i>
+        <p>Powered by Rayz</p>
+    </footer>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 8000); // Change image every 2 seconds
+        }
+
+
+    </script>
+</body>
+
+</html>
