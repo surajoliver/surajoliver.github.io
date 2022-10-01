@@ -38,6 +38,18 @@ body {
     line-height: 1.7;
 }
 
+
+div.wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+
+    &>* {
+        flex: 1;
+        margin-top: 0 !important;
+    }
+}
+
 .btn {
     display: inline-block;
     padding: .8rem 1.2rem;
@@ -89,6 +101,108 @@ body {
         text-align: center;
     }
 }
+
+// Progressbar
+section.progress-bars {
+
+
+
+    div.progress-bar {
+        display: inline-block;
+        position: relative;
+        border: 1px solid black;
+        padding: .25rem;
+        width: 80%;
+        height: 2rem;
+        margin: 0 5%;
+        background: black;
+        color: white;
+        text-align: center;
+
+        span.inside-bar {
+            display: block;
+            position: absolute;
+            height: inherit;
+            background: #777;
+            width: 1%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    button.btn2 {
+        display: inline-block;
+
+        background-color: #111;
+        color: white;
+        margin: 1rem 10vw 0 10vw;
+        font-size: clamp(.5rem, 2vw, 1rem);
+        box-shadow: .3rem .3rem 1rem .5rem #999;
+        //box-shadow: 2px 2px 2px 2px #999;
+    }
+
+
+}
+
+// Forms and List
+section.form-and-lists {
+    div.input-form {
+        box-shadow: .5rem .5rem .5rem .5rem #aaa;
+        padding: 1rem;
+        margin: 1rem 0 2rem 0;
+
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: .35rem;
+            margin-right: auto;
+
+        }
+
+    }
+
+    div.lists {
+        box-shadow: .5rem .5rem .5rem .5rem #aaa;
+        padding: 1rem;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem 0;
+
+            li {
+                padding: .5rem;
+            }
+
+            li+li {
+                border-top: 1px solid #ddd;
+            }
+        }
+
+        ul.drop-down {
+            border: 1px solid #ddd;
+
+            li.selected {
+                background-color: black;
+                color: white;
+            }
+
+            li:hover {
+                background-color: #bbb;
+            }
+        }
+    }
+
+
+
+}
+
+
 
 // Slideshow
 section.slideshows {

@@ -33,6 +33,16 @@ body {
   line-height: 1.7;
 }
 
+div.wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+div.wrapper > * {
+  flex: 1;
+  margin-top: 0 !important;
+}
+
 .btn {
   display: inline-block;
   padding: 0.8rem 1.2rem;
@@ -73,6 +83,76 @@ body {
   width: 20%;
   padding: 1rem;
   text-align: center;
+}
+
+section.progress-bars div.progress-bar {
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  padding: 0.25rem;
+  width: 80%;
+  height: 2rem;
+  margin: 0 5%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+section.progress-bars div.progress-bar span.inside-bar {
+  display: block;
+  position: absolute;
+  height: inherit;
+  background: #777;
+  width: 1%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+section.progress-bars button.btn2 {
+  display: inline-block;
+  background-color: #111;
+  color: white;
+  margin: 1rem 10vw 0 10vw;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  box-shadow: 0.3rem 0.3rem 1rem 0.5rem #999;
+}
+
+section.form-and-lists div.input-form {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #aaa;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+section.form-and-lists div.input-form input {
+  display: block;
+}
+section.form-and-lists div.input-form input[type=text] {
+  width: 100%;
+  padding: 0.35rem;
+  margin-right: auto;
+}
+section.form-and-lists div.lists {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #aaa;
+  padding: 1rem;
+}
+section.form-and-lists div.lists ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+section.form-and-lists div.lists ul li {
+  padding: 0.5rem;
+}
+section.form-and-lists div.lists ul li + li {
+  border-top: 1px solid #ddd;
+}
+section.form-and-lists div.lists ul.drop-down {
+  border: 1px solid #ddd;
+}
+section.form-and-lists div.lists ul.drop-down li.selected {
+  background-color: black;
+  color: white;
+}
+section.form-and-lists div.lists ul.drop-down li:hover {
+  background-color: #bbb;
 }
 
 section.slideshows .prev-next {

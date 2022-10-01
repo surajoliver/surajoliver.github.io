@@ -72,36 +72,10 @@
                 <span style="background-color:hsl(0,90, 50);">@90</span>
             </div>
         </div>
-        <!-- <div class="color-container">
-            <div class="color-usecase"></div>
-            <div class="colors">
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-            </div>
-        </div>
-        <div class="color-container">
-            <div class="color-usecase"></div>
-            <div class="colors">
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-            </div>
-        </div>
-        <div class="color-container">
-            <div class="color-usecase"></div>
-            <div class="colors">
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-                <span style="background-color:"></span>
-            </div> -->
         </div>
     </section>
 
-    <section class="responsiveness">
+    <!-- <section class="responsiveness">
         <h2 class="section-title">Built-In Responsiveness</h2>
         <p class="section-para">Resize the page to see the effect!</p>
         <div>
@@ -151,39 +125,54 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <section class="form-and-lists">
         <h2 class="section-title">Forms and Lists</h2>
-        <div class="input-form">
-            <h3>Input Form</h3>
-            <input type="text" class="text" name="name">
-            <label for="Name">Name</label>
-            <input type="text" class="text" name="email">
-            <label for="email">Email</label>
+        <div class="wrapper">
+            <div class="input-form">
+                <h3>Input Form</h3>
+                <input type="text" class="text" name="name">
+                <label for="Name">Name</label>
+                <input type="text" class="text" name="email">
+                <label for="email">Email</label>
 
-            <input type="checkbox" name="milk" id="milk">
-            <input type="checkbox" name="milk" id="milk">
+                <input type="checkbox" name="milk" id="milk">
+                <input type="checkbox" name="milk" id="milk">
 
-            <input type="radio" name="Male" id="male">
-            <input type="radio" name="Female" id="female">
+                <input type="radio" name="Male" id="male">
+                <input type="radio" name="Female" id="female">
 
 
-        </div>
+            </div>
 
-        <div class="lists">
-            <h3>Lists</h3>
-            <ul>
-                <li>Navin</li>
-                <li>Ravi</li>
-                <li>Hari</li>
-            </ul>
+            <div class="lists">
+                <h3>Lists</h3>
+                <ul>
+                    <li>Navin</li>
+                    <li>Ravi</li>
+                    <li>Hari</li>
+                </ul>
+
+                <ul class="drop-down">
+                    <li class="selected">Navin</li>
+                    <li>Ravi</li>
+                    <li>Hari</li>
+                </ul>
+
+            </div>
         </div>
     </section>
 
     <section class="progress-bars">
         <h2 class="section-title">Progress Bars</h2>
-        <button></button>
+        <div class="progress-bar">
+            <span id="inside-bar" class="inside-bar"></span>
+            <p id="inside-text">100%</p>
+        </div>
+
+        <button class="btn2" onclick="move();">Move</button>
+
     </section>
 
     <section class="slideshows">
@@ -255,14 +244,16 @@
 
     </section>
 
-    <section class="buttons">
+    <!-- <section class="buttons">
         <h2 class="section-title">Buttons</h2>
     </section>
 
     <section class="pagination">
         <h2 class="section-title">Pagination</h2>
     </section>
+ -->
 
+    <!-- Javascript methods -->
     <script>
         function myAccordian(item) {
             div_el = document.getElementById(item);
@@ -328,6 +319,23 @@
 
             slides[cnt - 1].classList.remove("slide-active");
         }
+
+
+        function move() {
+            insidebar = document.getElementById("inside-bar");
+            myInterval = setInterval(f1, 20);
+            w = 1;
+            function f1() {
+                insidebar.style.width = w + "%";
+                insidebar.innerText = w + "%";
+                w++;
+                if (w == 101) {
+                    clearInterval(myInterval);
+                }
+
+            }
+        }
+
     </script>
 </body>
 
