@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Template Food</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="javascript:open_menu();">
+            <i class="fa fa-navicon" style="font-size:24px"></i></a>
+        <h1 class="title">My Food</h1>
+        <p>Mail</p>
+    </header>
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li class="menu-item"><a href="javascript:close_menu();">Close Menu</a></li>
+            <li class="menu-item"><a href="">Food</a></li>
+            <li class="menu-item"><a href="">About</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <section class="food">
+            <div class="food-item">
+                <img src="img/bowl of ramen.jpg" alt="Bowl of Ramen" class="food-pic">
+                <h2 class="food-name">A Bowl of Ramen</h2>
+                <p class="food-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolores</p>
+            </div>
+            <div class="food-item">
+                <img src="img/chicken burger.jpg" alt="Chicken Burger" class="food-pic">
+                <h2 class="food-name">Chicken Burger</h2>
+                <p class="food-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, temporibus?</p>
+            </div>
+            <div class="food-item">
+                <img src="img/dumplings.jpg" alt="Dumplings" class="food-pic">
+                <h2 class="food-name">Perfect Dumplings</h2>
+                <p class="food-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni.</p>
+            </div>
+            <div class="food-item">
+                <img src="img/fruits.jpg" alt="Fruit" class="food-pic">
+                <h2 class="food-name">Delicious Fruits to eat</h2>
+                <p class="food-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, consectetur.
+                </p>
+            </div>
+            <div class="food-item">
+                <img src="img/Gobi Manchuri.jpg" alt="Gobi Manchuri" class="food-pic">
+                <h2 class="food-name">Spicy Gobi Manchuri</h2>
+                <p class="food-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem.</p>
+            </div>
+            <div class="food-item">
+                <img src="img/khamesh.jpg" alt="Khamesh" class="food-pic">
+                <h2 class="food-name">Handlicking Khamesh</h2>
+                <p class="food-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, non.</p>
+            </div>
+            <div class="food-item">
+                <img src="img/pancake.jpg" alt="Pancakes" class="food-pic">
+                <h2 class="food-name">Humble Pancakes</h2>
+                <p class="food-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, sint?</p>
+            </div>
+            <div class="food-item">
+                <img src="img/salad.jpg" alt="Salad" class="food-pic">
+                <h2 class="food-name">Who doesn't want the Salad</h2>
+                <p class="food-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, deleniti!</p>
+            </div>
+        </section>
+
+
+        <section class="about">
+            <h2 class="section-title">About me, the Food man</h2>
+            <img src="img/cook.jpg" alt="">
+            <p class="section-intro">I am Who I am!</p>
+            <p class="section-italics">With Passion of Cooking</p>
+            <p class="section-detl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dignissimos ipsa
+                accusamus dolore, illo error magni enim, cumque ab omnis animi laudantium? Nam vel fugit numquam atque,
+                sint
+                cumque alias ex fuga deleniti, pariatur, repellat dolor aperiam nesciunt est laboriosam? Laborum
+                voluptatum
+                beatae labore quae quidem consectetur, doloremque minus esse!</p>
+
+        </section>
+
+
+        <footer class="footer">
+            <section class="footer-sec">
+                <h2 class="footer-title">FOOTER</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolorem.</p>
+                <p class="copy">Powered by scss</p>
+            </section>
+            <section class="blog-posts">
+                <h2 class="footer-title">BLOG POSTS</h2>
+                <div class="blog-post-item">
+                    <img src="img/fruits.jpg" alt="">
+                    <div>
+                        <p class="post-title">Lorem</p>
+                        <p class="post-intro">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="blog-post-item">
+                    <img src="img/khamesh.jpg" alt="">
+                    <div>
+                        <p class="post-title">Ipsum</p>
+                        <p class="post-intro">Lorem ipsum dolor sit amet..</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-tag">
+                <h2 class="footer-title">POPULAR TAGS</h2>
+                <span class="tag">Travel</span><span class="tag">New York</span><span class="tag">Great food</span><span
+                    class="tag">Chicken</span><span class="tag">Khamesh</span><span class="tag">Cuisine</span><span
+                    class="tag">Dressing</span><span class="tag">Fish</span>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        nav = document.querySelector("nav.nav");
+        function close_menu() {
+            nav.style.display = 'none';
+        }
+
+        function open_menu() {
+            nav.style.display = 'block';
+
+        }
+    </script>
+</body>
+
+</html>
