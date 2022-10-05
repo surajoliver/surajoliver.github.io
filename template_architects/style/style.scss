@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+div,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 3rem auto 0 auto;
+}
+
+
+body,
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 2rem 0;
+    margin: 3rem 0 2rem;
+}
+
+// Header
+
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem 0 #bbb;
+    font-family: 'Noto Sans Mono', monospace;
+
+
+}
+
+.header h1.logo {
+    letter-spacing: 1rem;
+}
+
+.nav {
+    a.nav-item {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+.section-title {
+    font-weight: 400;
+    padding: 0 0 1rem;
+    margin: 0 0 2rem;
+    border-bottom: 1px solid rgba(200, 200, 200, .4);
+}
+
+// projects
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .a {
+        background-color: antiquewhite;
+        border: 5px solid black;
+    }
+
+    .project-detl {
+        flex: 1 1 16rem;
+        position: relative;
+        width: 100%;
+
+
+        h3.project-title {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: .5rem .5rem;
+            background-color: black;
+            color: white;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        img {
+            object-fit: cover;
+            height: 12rem;
+        }
+
+    }
+}
+
+
+
+
+
+// @media (min-width: 600px) {
+//     .architect {
+//         width: 45%;
+//     }
+// }
+
+// @media (min-width: 900px) {
+//     .architect {
+//         width: 22%;
+//     }
+// }
+// .projects {
+//     displa : flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     width: 10rem;
+//     height: 10rem;
+
+//     // .project-detl {
+//     //     position: absolute;
+//     // }
+// }
+
+
+.about {
+    letter-spacing: .01rem;
+
+
+    .architect-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .architect {
+        margin: 2rem 0;
+
+        // max-width: 40vh;
+        // max-height: 40vh;
+        img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h3.architect-name {
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin: .5rem 0 1rem;
+        }
+
+        p.title {
+            position: relative;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .contact-btn {
+            display: block;
+            background-color: #ddd;
+            color: #000;
+            text-decoration: none;
+            padding: .5rem;
+            margin: 1rem 0 0;
+            text-align: center;
+
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .architect {
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .architect {
+        width: 22%;
+    }
+}
+
+section.contact {
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: .5rem;
+        margin: 1rem 0 0 0;
+        font-size: 1rem;
+        box-shadow: 1px 1px 1px 1px #ccc;
+        border: 1px solid #bbb;
+    }
+
+    input[type="submit"] {
+        padding: .5rem 1rem;
+        background-color: black;
+        color: white;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        box-shadow: .2rem .2rem 1rem 1rem #999;
+    }
+}
+
+footer.footer {
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+
+
+}

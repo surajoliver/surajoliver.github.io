@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+div,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 3rem auto 0 auto;
+}
+
+body,
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  line-height: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 2rem 0;
+  margin: 3rem 0 2rem;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem 0 #bbb;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.header h1.logo {
+  letter-spacing: 1rem;
+}
+
+.nav a.nav-item {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.section-title {
+  font-weight: 400;
+  padding: 0 0 1rem;
+  margin: 0 0 2rem;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.projects .a {
+  background-color: antiquewhite;
+  border: 5px solid black;
+}
+.projects .project-detl {
+  flex: 1 1 16rem;
+  position: relative;
+  width: 100%;
+}
+.projects .project-detl h3.project-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5rem 0.5rem;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.projects .project-detl img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 12rem;
+}
+
+.about {
+  letter-spacing: 0.01rem;
+}
+.about .architect-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.about .architect {
+  margin: 2rem 0;
+}
+.about .architect img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .architect h3.architect-name {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 0.5rem 0 1rem;
+}
+.about .architect p.title {
+  position: relative;
+  color: #777;
+  margin-bottom: 1rem;
+}
+.about .architect .contact-btn {
+  display: block;
+  background-color: #ddd;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .architect {
+    width: 45%;
+  }
+}
+@media (min-width: 900px) {
+  .architect {
+    width: 22%;
+  }
+}
+section.contact input[type=text],
+section.contact input[type=email] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  font-size: 1rem;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  border: 1px solid #bbb;
+}
+section.contact input[type=submit] {
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0.2rem 0.2rem 1rem 1rem #999;
+}
+
+footer.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 1rem;
+}/*# sourceMappingURL=style.css.map */
