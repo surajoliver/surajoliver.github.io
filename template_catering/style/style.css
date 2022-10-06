@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Abyssinica SIL", serif;
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 4rem 0 4rem;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.container {
+  width: 92%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.gray {
+  color: #aaa;
+}
+
+.section-title {
+  letter-spacing: 0.3rem;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header {
+  padding: 0.2rem 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 1rem 1rem rgba(200, 200, 200, 0.5);
+  z-index: 4;
+}
+.header nav {
+  display: none;
+}
+.header .logo {
+  letter-spacing: 0.3rem;
+}
+.header .nav-item {
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  display: inline-block;
+}
+.header .nav-item:hover {
+  background-color: #ddd;
+}
+
+@media (min-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header nav {
+    display: block;
+  }
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero p.logo {
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem;
+  font-size: 2em;
+  background-color: #fff;
+  padding: 0 1rem;
+  opacity: 0.5;
+}
+
+.about .intro {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  font-style: oblique;
+}
+.about img {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .about .container {
+    display: flex;
+    gap: 1.5vw;
+  }
+  .about .container img {
+    display: block;
+    width: 50%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+section.our-menu ul.menu-list {
+  list-style: none;
+  padding: 2rem 0;
+}
+section.our-menu li.menu-item > * {
+  margin-bottom: 1rem;
+}
+section.our-menu li.menu-item h3 {
+  letter-spacing: 0.5rem;
+}
+section.our-menu li.menu-item p {
+  font-size: 0.9em;
+}
+
+@media (min-width: 900px) {
+  section.our-menu .container {
+    display: flex;
+    gap: 1.5rem;
+  }
+  section.our-menu .container img {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+section.contact {
+  line-height: 1.3rem;
+}
+section.contact p.address {
+  margin: 1.5rem 0;
+  color: hsl(200deg, 90%, 40%);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+section.contact .contact-form {
+  margin: 2rem 0;
+}
+section.contact .contact-form > * {
+  font-family: "Abyssinica SIL", serif;
+  width: 100%;
+  padding: 1rem 1em 1em 1em;
+  margin-bottom: 1rem;
+  border: 0;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+}
+section.contact .contact-form input[type=submit] {
+  width: auto;
+  margin: 1rem 0;
+}
+
+footer.footer {
+  background-image: linear-gradient(to right, #bbb, #888);
+}
+footer.footer > * {
+  padding: 3rem 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
