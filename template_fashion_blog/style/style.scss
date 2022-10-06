@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+div,
+body,
+h1,
+h2,
+h5,
+p {
+    margin: 0;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ddd;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+.block {
+    display: block;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.test1 {
+    border: 1px solid red;
+}
+
+.test2 {
+    background-color: pink;
+}
+
+.header {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    .page-title {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        letter-spacing: -.2rem;
+        font-weight: 400;
+    }
+
+
+}
+
+
+.hero {
+    position: relative;
+    color: white;
+
+    img {
+        object-fit: cover;
+        height: 65vh;
+        display: inline-block;
+        filter: brightness(30%);
+    }
+
+    div {
+        position: absolute;
+        top: 20vh;
+        left: 1rem;
+
+        .name {
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        .purpose {
+            text-transform: uppercase;
+            font-size: 3em;
+            font-weight: 700;
+            padding: 1rem 0 1rem;
+            display: none;
+        }
+
+        .btn {
+            background-color: #999;
+            margin: 1rem 0;
+            padding: .5rem 1rem;
+            display: inline-block;
+            text-decoration: none;
+            color: #222;
+
+            &:hover {
+                background-color: #bbb;
+            }
+        }
+    }
+
+
+}
+
+
+@media(min-width: 900px) {
+    .hero {
+        div {
+            .purpose {
+                display: block;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 1rem;
+
+        aside {
+            width: 35%;
+            flex: 1;
+        }
+    }
+
+}
+
+
+// Article
+
+.article {
+    background-color: #fff;
+    margin: 0 0 1rem;
+    padding: 1rem 1.3rem;
+
+    img {
+        max-height: 50vw;
+        object-fit: contain;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .desc {
+        text-align: center;
+        margin: 1rem;
+        font-size: .8rem;
+
+        span {
+            margin-left: .5rem;
+            color: #aaa;
+
+        }
+    }
+
+    div.body {
+        font-size: .8em;
+        margin: 1rem 0;
+        line-height: 1.4rem;
+    }
+
+    a.btn {
+        border: 1px solid #bbb;
+        padding: .8rem 1rem;
+        display: inline-block;
+        text-decoration: none;
+        //float: left;
+    }
+
+    .replies {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+    }
+
+    .cnt {
+        background-color: white;
+        color: black;
+        padding: .3rem;
+        margin-left: .3rem;
+    }
+
+    .comments {
+        border-top: 1px solid #aaa;
+        margin-top: 1rem;
+        padding: 1rem;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+
+        .comment-date {
+            margin-left: 1rem;
+            color: #bbb;
+            font-size: .8em;
+        }
+
+        .comment-body {
+            margin-top: .5rem;
+            font-size: .8em;
+        }
+
+    }
+}
+
+.about {
+    position: relative;
+
+    img {
+
+        object-fit: cover;
+        max-height: 80vh;
+    }
+
+    .about-intro {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+        color: white;
+        z-index: 3;
+    }
+
+    p.name {
+        margin-bottom: 1.5rem;
+        font-size: 1.5em;
+    }
+
+    p.intro {
+        line-height: 1.6rem;
+        color: #bbb;
+    }
+}
+
+h2.dark-title {
+    padding: 1rem;
+    background-color: #000;
+    color: #eee;
+    font-weight: 400;
+}
+
+aside {
+    section {
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+}
+
+section.popular-posts {
+    img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+
+    div.post {
+        padding: 1rem;
+
+        display: flex;
+
+        div {
+            margin-left: 1rem;
+        }
+
+        .post-title {
+            font-size: 1.1em;
+            margin-bottom: .5rem;
+        }
+
+        .top {
+            font-size: .7em;
+        }
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+
+    .post+.post {
+        border-top: 1px solid #777;
+    }
+}
+
+section.tags {
+    div.tags-body {
+        padding: 1rem;
+
+        span {
+            font-size: .7em;
+            padding: .4rem;
+            background-color: #ddd;
+            margin-right: .5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+
+        }
+    }
+}
+
+section.inspirations {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    p {
+        border: 1px solid green;
+
+        img {
+            height: 40vw;
+            width: 40vw;
+            object-fit: cover;
+        }
+    }
+
+
+}
+
+@media(min-width: 900px) {
+    section.inspirations {
+        div {
+            gap: .5rem;
+            border: none;
+        }
+
+        p {
+            img {
+                height: 10vw;
+                width: 9vw;
+            }
+        }
+    }
+}
+
+section.subscribe div {
+    padding: 1rem 1rem 2rem;
+
+    &>*+* {
+        margin-top: 1rem;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding: .5rem;
+    }
+
+    a {
+        display: block;
+        padding: .6rem;
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        text-align: center;
+
+        &:hover {
+            background-color: #aaa;
+        }
+    }
+
+}
+
+
+
+footer {
+
+    background-image: linear-gradient(to right, #333, #999);
+
+    a {
+        color: white;
+        text-decoration: none;
+        background-color: #000;
+        padding: .6rem;
+        font-size: .8em;
+        display: inline-block;
+
+
+    }
+
+}
