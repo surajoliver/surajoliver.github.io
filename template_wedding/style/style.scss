@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+    --clr-primary: hsl(0, 51%, 91%);
+    --clr-accent-900: hsl(0, 100%, 71%);
+    --clr-accent-100: hsl(0, 100%, 91%);
+
+    --clr-neutral-900: hsl(0, 0%, 0%);
+    --clr-neutral-400: hsl(0, 0%, 50%);
+    --clr-neutral-100: hsl(0, 100%, 100%);
+
+    --fs-300: 0.8125rem;
+    --fs-400: 1rem;
+    // --fs-500: 0.9375rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2rem;
+    --fs-800: 3rem;
+    --fs-900: 4rem;
+
+    --fw-bold: 700;
+    --fw-semi-bold: 600;
+    --fw-regular: 400;
+
+    --size-100: 0.25rem;
+    --size-200: 0.5rem;
+    --size-300: 0.75rem;
+    --size-400: 1rem;
+    --size-500: 1.5rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+    --size-900: 5rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+// img {
+//     display: block;
+// }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.hero {
+    position: relative;
+}
+
+.hero__img {
+    height: 100vh;
+    filter: brightness(40%);
+}
+
+.hero__body {
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+
+}
+
+
+.wedding-into {
+    padding: var(--size-700);
+}
+
+.wedding-intro__title {
+    @extend .x-large;
+    padding: var(--size-700);
+}
+
+
+.wedding-invitation {
+    position: relative;
+    padding: var(--size-900) 0;
+}
+
+.wedding-invitation__invite {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+.wedding-invitation__invite-image {
+    filter: sepia(100%) brightness(50%);
+    // filter: grayscale(50%);
+
+}
+
+.section-title {
+    margin-bottom: var(--size-800);
+
+}
+
+.wedding-details {
+    padding: var(--size-700) 0
+}
+
+.wedding-details__body {
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-600);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 50rem) {
+    .wedding-details__body {
+        flex-direction: row;
+    }
+}
+
+.wedding-details__image {
+    max-width: 40rem;
+    margin: auto;
+}
+
+
+
+h1,
+h2,
+h3 {
+    line-height: 1em;
+}
+
+.button {
+    margin: var(--size-600) auto;
+}
+
+
+
+/* Utilities class */
+
+.bg-black {
+    background-color: var(--clr-neutral-900);
+}
+
+.bg-gray {
+    background-color: var(--clr-neutral-400);
+}
+
+.bg-white {
+    background-color: var(--clr-neutral-100);
+}
+
+.bg-darkpink {
+    background-color: var(--clr-accent-900);
+}
+
+.bg-pink {
+    background-color: var(--clr-accent-100);
+}
+
+.bg-lightpink {
+    background-color: var(--clr-primary);
+}
+
+.text-black {
+    color: var(--clr-neutral-900);
+}
+
+.text-gray {
+    color: var(--clr-neutral-400);
+}
+
+.text-white {
+    color: var(--clr-neutral-100);
+}
+
+
+.text-darkpink {
+    color: var(--clr-accent-900);
+}
+
+.text-pink {
+    color: var(--clr-accent-100);
+}
+
+.text-lightpink {
+    color: var(--clr-primary);
+}
+
+.xxx-large {
+    font-size: var(--fs-900);
+}
+
+.xx-large {
+    font-size: var(--fs-800);
+}
+
+.x-large {
+    font-size: var(--fs-700);
+}
+
+.large {
+    font-size: var(--fs-600);
+}
+
+.medium {
+    font-size: var(--fs-400);
+}
+
+.small {
+    font-size: var(--fs-300);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.flow>*+* {
+    margin-top: 1em;
+}
+
+.flow2>*+* {
+    margin-top: 2em;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+}
+
+.image[data-type="full-width"] {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.button {
+    padding: var(--size-200) var(--size-200);
+}
+
+.button[data-type="inverted"] {
+    @extend .bg-black;
+    @extend .text-white;
+    display: block;
+}
+
+.wedding-confirm {
+    @extend .bg-pink;
+    padding: var(--size-700) 0;
+    text-align: center;
+}
+
+.wedding-confirm__button {
+    @extend .bg-darkpink;
+    margin: var(--size-600) auto;
+    font-size: var(--fs-600);
+    padding: var(--size-400) var(--size-800);
+}
+
+.footer {
+    @extend .text-center;
+    padding: var(--size-600);
+}
