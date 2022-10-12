@@ -74,22 +74,23 @@ img {
     background-color: var(--clr-primary-400);
 }
 
-nav ul.nav-list {
+
+.navbar__list {
     display: flex;
     list-style: none;
+}
 
-    li.nav-item a {
-        display: inline-block;
-        text-decoration: none;
-        color: var(--clr-neutral-100);
-        padding: var(--size-400);
-        text-transform: uppercase;
+.navbar__item>a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-neutral-100);
+    padding: var(--size-400);
+    text-transform: uppercase;
+}
 
-        &:hover {
-            background-color: var(--clr-accent-400);
-            transition-duration: 500ms;
-        }
-    }
+.navbar__item>a:hover {
+    background-color: var(--clr-accent-400);
+    transition-duration: 500ms;
 }
 
 // Hero - Automatic slideshow
@@ -124,26 +125,24 @@ nav ul.nav-list {
     }
 }
 
-
-section {
-    .section-title {
-        text-align: center;
-        font-size: clamp(var(--fs-700), 5vw, var(--fs-900));
-    }
-
-    .section-desc {
-        text-align: center;
-        font-style: italic;
-        margin: var(--size-500);
-        color: var(--clr-neutral-400);
-    }
+.section__title {
+    text-align: center;
+    font-size: clamp(var(--fs-700), 5vw, var(--fs-900));
 }
 
-// Band
-section.band {
+
+.section__desc {
+    text-align: center;
+    font-style: italic;
+    margin: var(--size-500);
+    color: var(--clr-neutral-400);
+}
+
+// Band Section
+.band {
     padding: 5vh 0 15vh;
 
-    .band-members {
+    .band__members {
         width: 50vw;
         margin: auto;
 
@@ -171,7 +170,7 @@ section.tour {
     background-color: var(--clr-primary-400);
     padding: 10vh 0;
 
-    .section-title {
+    .section__title {
         color: var(--clr-neutral-100)
     }
 

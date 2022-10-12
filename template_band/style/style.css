@@ -67,18 +67,20 @@ img {
   background-color: var(--clr-primary-400);
 }
 
-nav ul.nav-list {
+.navbar__list {
   display: flex;
   list-style: none;
 }
-nav ul.nav-list li.nav-item a {
+
+.navbar__item > a {
   display: inline-block;
   text-decoration: none;
   color: var(--clr-neutral-100);
   padding: var(--size-400);
   text-transform: uppercase;
 }
-nav ul.nav-list li.nav-item a:hover {
+
+.navbar__item > a:hover {
   background-color: var(--clr-accent-400);
   transition-duration: 500ms;
 }
@@ -109,25 +111,26 @@ nav ul.nav-list li.nav-item a:hover {
   padding: var(--size-100);
 }
 
-section .section-title {
+.section__title {
   text-align: center;
   font-size: clamp(var(--fs-700), 5vw, var(--fs-900));
 }
-section .section-desc {
+
+.section__desc {
   text-align: center;
   font-style: italic;
   margin: var(--size-500);
   color: var(--clr-neutral-400);
 }
 
-section.band {
+.band {
   padding: 5vh 0 15vh;
 }
-section.band .band-members {
+.band .band__members {
   width: 50vw;
   margin: auto;
 }
-section.band .band-members p {
+.band .band__members p {
   text-align: center;
   margin-top: var(--size-600);
 }
@@ -136,7 +139,7 @@ section.tour {
   background-color: var(--clr-primary-400);
   padding: 10vh 0;
 }
-section.tour .section-title {
+section.tour .section__title {
   color: var(--clr-neutral-100);
 }
 section.tour div.slots {

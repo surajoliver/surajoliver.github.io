@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Interior Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="javascript:open_menu();"><i class="fa fa-bars"></i></a>
+        <p class="logo">Company Name</p>
+        <nav class="nav" id="myNav">
+            <ul class="nav__list" role="list">
+                <li class="nav__item"><a href="javascript:close_menu();">Close Menu</a></li>
+                <li class="nav__item"><a href="">Home</a></li>
+                <li class="nav__item"><a href="">Showcase</a></li>
+                <li class="nav__item"><a href="">Services</a></li>
+                <li class="nav__item"><a href="">Designers</a></li>
+                <li class="nav__item"><a href="">Package</a></li>
+                <li class="nav__item"><a href="">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="showcase">
+        <h1 class="title">Interior Design</h1>
+        <h2 class="sub-title">Showcase</h2>
+        <div>
+            <img src="img/jonathan-borba-EnZaPhgS6KY-unsplash.jpg" alt="" class="items">
+            <img src="img/kam-idris-_HqHX3LBN18-unsplash.jpg" alt=""><img src="img/spacejoy-h2_3dL9yLpU-unsplash.jpg"
+                alt="">
+        </div>
+
+
+    </section>
+
+    <section class="services">
+        <h2 class="sub-title">Services</h2>
+        <div class="body-text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores hic impedit facilis voluptatem, minus
+                veniam? Neque delectus vel odio commodi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum rem minima, aperiam tenetur iusto
+                eveniet excepturi voluptates molestias. Laborum doloremque exercitationem pariatur eum, dolorem unde
+                quos itaque? Qui explicabo voluptatibus laboriosam libero dignissimos maiores necessitatibus, id itaque
+                mollitia voluptas rem perspiciatis totam ea, accusamus nemo ducimus sunt, amet nulla!</p>
+        </div>
+    </section>
+
+    <section class="designers">
+        <h2 class="sub-title">Designers</h2>
+        <div class="body-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit deserunt maiores, necessitatibus
+            architecto vero culpa sapiente nisi sequi temporibus quasi soluta aut iure ipsum nulla eos dolorem hic
+            nesciunt.
+        </div>
+        <div class="designers-card">
+            <div class="card">
+                <img src="img/designer1.jpg" alt="">
+                <p class="title">CEO and Founder</p>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque.</p>
+            </div>
+            <div class="card">
+                <img src="img/designer2.jpg" alt="">
+                <p class="title">Designer</p>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque.</p>
+            </div>
+            <div class="card">
+                <img src="img/designer3.jpg" alt="">
+                <p class="title">Designer</p>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2 class="sub-title">Packages.</h2>
+        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus laudantium eos, dolorem
+            tempore libero inventore beatae optio deserunt? Quos, vel.</p>
+        <div class="card">
+            <h3 class="card__title">Basic</h3>
+            <p class="card_feature">Floorplanning</p>
+            <p class="card_feature">10 hours support</p>
+            <p class="card_feature">Photography</p>
+            <p class="card_feature">20% furniture discount</p>
+            <p class="card_feature">Good deals</p>
+            <p class="card_feature">$ 199 <span>per room</span></p>
+            <a href="" class="card__btn">Sign UP</a>
+        </div>
+        <div class="card">
+            <h3 class="card__title">Pro</h3>
+            <p class="card_feature">Floorplanning</p>
+            <p class="card_feature">50 hours support</p>
+            <p class="card_feature">Photography</p>
+            <p class="card_feature">50% furniture discount</p>
+            <p class="card_feature">GREAT deals</p>
+            <p class="card_feature">$ 299 <span>per room</span></p>
+            <a href="" class="card__btn">Sign UP</a>
+        </div>
+
+    </section>
+
+    <section class="contact">
+
+
+    </section>
+
+    <script>
+        var myNav = document.querySelector("#myNav");
+        function open_menu() {
+            if (myNav.style.display === 'block') {
+                myNav.style.display = 'none';
+            } else {
+                myNav.style.display = 'block';
+            }
+        }
+
+        function close_menu() {
+            myNav.style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>
