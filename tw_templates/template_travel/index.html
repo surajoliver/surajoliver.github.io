@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body class="bg-slate-200">
+  <header class="header px-3">
+    <p>Logo</p>
+  </header>
+  <div class="hero w-full relative h-max-screen hidden sm:block">
+    <img class="w-full h-full object-cover" src="img/kumaraparvatha.jpg" alt="">
+    <p class="absolute text-white text-5xl h-full bottom-0 flex items-center w-full justify-center lg:text-8xl">
+      Karnataka
+      Tourism</p>
+  </div>
+  <main class="main px-3 mx-auto  max-w-4xl m-auto">
+
+
+    <div class="offers py-6">
+      <h1 class="text-xl font-light">Good Offers Right Now</h1>
+      <p class="text-sm my-4">Up to 50% discount</p>
+      <div class="card__items sm:h-80  sm:grid sm:grid-cols-2 gap-2">
+        <div class="card h-80 relative mb-2 sm:mb-0">
+          <img class="w-full h-full object-cover " src="img/hampi.jpg" alt="Hampi">
+          <p class="absolute bottom-4 left-4 text-white">Hampi</p>
+        </div>
+        <div class="sm:grid sm:grid-cols-2 sm:grid-rows-2 gap-2">
+          <div class="card h-80 relative sm:h-40 mb-2 sm:mb-0">
+            <img class="w-full h-full object-cover" src="img/mysore palace dussera.jpg" alt="Mysore dussera">
+            <p class="absolute bottom-4 left-4 text-white">Mysore dussera</p>
+          </div>
+
+          <div class="card h-80 relative mb-2 sm:h-40 sm:mb-0">
+            <img class="w-full h-full object-cover" src="img/mysore palace.jpg" alt="">
+            <p class="absolute bottom-4 left-4 text-white">Mysore palace</p>
+          </div>
+          <div class="card h-80 relative mb-2 sm:h-40 sm:mb-0">
+            <img class="w-full h-full object-cover" src="img/temple.jpg" alt="Temple">
+            <p class="absolute bottom-4 left-4 text-white">Temple</p>
+          </div>
+          <div class="card h-80 relative mb-2 sm:h-40 sm:mb-0">
+            <img class="w-full h-full object-cover" src="img/kapu beach.jpg" alt="Kapu beach">
+            <p class="absolute bottom-4 left-4 text-white">Kapu beach</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explore-nature py-6">
+      <h2 class="text-xl font-light">Expore Nature</h2>
+      <p class="text-sm py-4">Travel with us and see nature at its finest</p>
+
+      <div class="sm:grid sm:grid-cols-2 gap-4">
+        <div class="trip-card bg-white">
+          <div class="h-80 sm:h-40 md:h-60 lg:h-80">
+            <img class="trip-card__image h-full w-full object-cover object-bottom" src="img/iruppa falls.jpg"
+              alt="Iurru Falls">
+          </div>
+          <div class="px-4 py-3 space-y-3 mb-4">
+            <h2 class="trip-card__name text-2xl font-light tracking-widest">Irrupa Fall, Coorg</h2>
+            <p class="trip-card__price font-light tracking-tight text-slate-500">Roundrip from Rs.5000</p>
+            <p class="trip-card__detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, esse?</p>
+            <a href="" class="btn inline-block px-3 py-2 hover:bg-slate-300 text-slate-500">Buy Tickets</a>
+          </div>
+        </div>
+
+        <div class="trip-card bg-white">
+          <div class="h-80 sm:h-40 md:h-60 lg:h-80">
+            <img class="trip-card__image h-full w-full object-cover object-bottom" src="img/jog falls.jpg"
+              alt="Jog Falls">
+          </div>
+          <div class="px-4 py-3 space-y-3 mb-4">
+            <h2 class="trip-card__name text-2xl font-light tracking-widest">Jog Fall, Coorg</h2>
+            <p class="trip-card__price font-light tracking-tight text-slate-500">Roundrip from Rs.15,000</p>
+            <p class="trip-card__detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <a href="" class="btn inline-block px-3 py-2 hover:bg-slate-300 text-slate-500">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer bg-slate-500 text-white px-4 py-3">
+      <h2 class="offer-titlle text-2xl tracking-widest font-light mb-4">Get the best offer first!</h2>
+      <p class="text-sm tracking-wide mb-4">Join our newsletter</p>
+      <form action="" class="flex flex-col items-start">
+        <label for="email" class="text-sm">E-mail</label>
+        <input type="email" class="w-full px-2 py-0.5 text-slate-600" name="email" id="email">
+        <button class="btn inline-block py-1 px-3 bg-red-400 mt-2 tracking-wider text-sm mt-4">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="contact py-6 text-slate-600">
+      <div>
+        <h2 class="contact-title text-3xl tracking-widest font-light">Contact</h2>
+        <p class="mt-4">Let us book your next trip</p>
+        <div class="mt-4 text-sm">
+          <p>Bengaluru, India</p>
+          <p>Phone: +91 9538295937</p>
+          <p>Email: suraj.oliver@gmail.com</p>
+        </div>
+      </div>
+      <form action="" class="form space-y-2 py-3">
+        <input class="block w-full px-3 py-1 border border-solid border-slate-400" type="text" name="name" id="name"
+          placeholder="Name">
+        <input class="block w-full px-3 py-1 border border-solid border-slate-400" type="email" name="email" id="email"
+          placeholder="Email">
+        <input class="block w-full px-3 py-1 border border-solid border-slate-400" type="text" name="mesg" id="mesg"
+          placeholder="Message">
+        <input type="button" class="inline-block bg-slate-600 text-white py-2 px-3 tracking-widest"
+          value="SEND MESSAGE">
+      </form>
+    </div>
+  </main>
+  <footer class="footer text-center py-6">
+    <p>Find Us On</p>
+
+  </footer>
+
+</body>
+
+</html>
