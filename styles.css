@@ -1,3 +1,161 @@
-body{
-    background-color: #eee;
+:root{
+    --primary: #007BFF;
+    --secondary: #6C757D;
+    --background: #ffffff;
+    --text: #333333;
+    --accent: #28A745;
+    --darkgray: #CED4DA;
+    --lightgray: #E9ECEF;
+    --ff-display-heading: 
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    min-width: 50%;
+}
+
+
+/* Typography design */
+.display{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--primary);
+}
+
+.section-header{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700px;
+    margin: 4px 8px;
+    color: #bbb;
+    text-transform: uppercase;
+}
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.title{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.body{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--secondary);
+}
+
+.label{
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.button{
+    display: inline-block;
+    border: 1px solid var(--primary);
+    padding: 8px 18px;
+    margin: 8px 0;
+    border-radius: 4px;
+    color: var(--primary);
+    text-decoration: none;
+
+}
+
+.button:hover{
+    background-color: var(--lightgray);
+}
+
+.container{
+    margin: 0 8px;
+}
+
+
+.hero{
+    text-align: center;
+    background-color: var(--lightgray);
+    padding: 40px 0;
+}
+
+
+.portfolio-list{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    padding: 20px 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.portfolio-item:nth-child(2n-1){
+    background-color: var(--lightgray)
+}
+
+
+.footer{
+    background-color: var(--lightgray);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 600px) {
+    .portfolio-list{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio-item:nth-child(2n-1){
+        background-color: var(--background);
+    }
+
+    .card{
+        flex-direction: column;
+        /* background-color: var(--lightgray); */
+    }
+
+    .display{
+        font-size: 42px;
+    }
+    
+    .heading{
+        font-size: 28px;
+    }
+    .body{
+        font-size: 14px;       
+        line-height: 150%;
+    }
+}
+
+@media (min-width: 900px) {
+    .portfolio-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .display{
+        font-size: 48px;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .body{
+        font-size: 16px;
+        
+    }
 }
