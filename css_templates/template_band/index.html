@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template-Band</title>
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -18,11 +23,11 @@
     <header class="header">
         <nav class="navbar">
             <ul class="navbar__list">
-                <li class="navbar__item"><a href="#">Home</a></li>
-                <li class="navbar__item"><a href="#band">Band</a></li>
-                <li class="navbar__item"><a href="#tour">Tour</a></li>
-                <li class="navbar__item"><a href="#contact">Contact</a></li>
-                <li class="navbar__item"><a href="#">Merch</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#band">Band</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#tour">Tour</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Merch</a></li>
             </ul>
         </nav>
     </header>
@@ -46,10 +51,10 @@
 
     </section>
 
-    <section id="band" class="band">
+    <section id="band" class="band section">
         <div class="container">
-            <h1 class="section__title">The Band</h1>
-            <p class="section__desc">We love music</p>
+            <h1 class="section__title heading">The Band</h1>
+            <p class="section__desc heading-desc">We love music</p>
             <div class="band-body">
                 <p>This is a fictional band website. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Accusantium, incidunt sapiente. Aperiam vitae hic ad facere laboriosam reiciendis deserunt
@@ -63,15 +68,15 @@
             </div>
             <div class="band__members">
                 <div>
-                    <p>AJ McLean</p>
+                    <h3>AJ McLean</h3>
                     <img src="img/aj mclean.jpeg" alt="">
                 </div>
                 <div>
-                    <p>Kevin Richardson</p>
+                    <h3>Kevin Richardson</h3>
                     <img src="img/kevin richardson.jpeg" alt="">
                 </div>
                 <div>
-                    <p>Nick Carter</p>
+                    <h3>Nick Carter</h3>
                     <img src="img/nick carter.jpeg" alt="">
                 </div>
 
@@ -79,30 +84,32 @@
         </div>
     </section>
 
-    <section id="tour" class="tour">
-        <h2 class="section__title">Tour Dates</h2>
-        <p class="section__desc">Remember to book your tickets!</p>
+    <section id="tour" class="tour section">
         <div class="container">
-            <div class="slots">
-                <p class="slot-details">September</p>
-                <p class="status highlight">Sold out</p>
-            </div>
-            <div class="slots">
-                <p class="slot-details">October</p>
-                <p class="status highlight">Sold out</p>
-            </div>
-            <div class="slots">
-                <p class="slot-details">November</p>
-                <p class="status"></p>
+            <h2 class="section__title heading">Tour Dates</h2>
+            <p class="section__desc heading-desc">Remember to book your tickets!</p>
+
+            <div class="slots__section">
+                <div class="slots">
+                    <p class="slot-details">September</p>
+                    <p class="status highlight">Sold out</p>
+                </div>
+                <div class="slots">
+                    <p class="slot-details">October</p>
+                    <p class="status highlight">Sold out</p>
+                </div>
+                <div class="slots">
+                    <p class="slot-details">November</p>
+                    <p class="status"></p>
+                </div>
             </div>
 
-        </div>
-        <div class="container">
+
             <div class="row">
                 <div class="tour-location">
                     <img src="img/new york.jpeg" alt="">
                     <div>
-                        <p class="tour-name">New York</p>
+                        <h3 class="tour-name">New York</h3>
                         <p class="tour-date">Fri 27, Nov 2016</p>
                         <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
                             laboriosam.
@@ -113,7 +120,7 @@
                 <div class="tour-location">
                     <img src="img/paris.jpeg" alt="">
                     <div>
-                        <p class="tour-name">Paris</p>
+                        <h3 class="tour-name">Paris</h3>
                         <p class="tour-date">Sun 29, Nov 2016</p>
                         <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
                             laboriosam.
@@ -124,7 +131,7 @@
                 <div class="tour-location">
                     <img src="img/london.jpeg" alt="">
                     <div>
-                        <p class="tour-name">London</p>
+                        <h3 class="tour-name">London</h3>
                         <p class="tour-date">Fri 27, Nov 2016</p>
                         <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
                             laboriosam.
@@ -137,34 +144,41 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section__title">Contact</h2>
-        <p class="section__desc">Fan? Drop a note!</p>
-
+    <section id="contact" class="contact section">
         <div class="container">
-            <div>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <p class="contact-method">Bengaluru, India</p><br />
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p class="contact-method">Phone: #91-9538295937</p><br />
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p class="contact-method">Email: suraj.oliver@gmail.com</p><br />
-            </div>
+            <h2 class="section__title heading">Contact</h2>
+            <p class="section__desc heading-desc">Fan? Drop a note!</p>
 
-            <form action="mailto:suraj.oliver@gmail.com" method="post" enctype="text/plain" class="contact-form">
-                <div>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="text" name="email" id="email" placeholder="Email">
+            <div class="row">
+                <div class="contact-address">
+                    
+                    <p class="contact-method"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Bengaluru, India</p><br />
+                    
+                    <p class="contact-method"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Phone: #91-9538295937</p><br />
+                    
+                    <p class="contact-method"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Email: suraj.oliver@gmail.com</p><br />
                 </div>
-                <input type="text" name="message" id="message" placeholder="Message">
 
-                <input type="submit" name="submit" value="SEND">
-            </form>
+                <form action="mailto:suraj.oliver@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="row">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+                    <input type="text" name="message" id="message" placeholder="Message">
+
+                    <div class="text-right">
+                    <input type="submit" name="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <img src="img/nagarbhavi.png" alt="">
+        
     </section>
 
+    <img src="img/nagarbhavi.png" alt="" class="location">
+
+    
     <footer>
         <i class="fa fa-facebook-square" aria-hidden="true"></i>
         <i class="fa fa-twitter"></i>

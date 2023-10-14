@@ -1,0 +1,318 @@
+:root{
+    --primary: #333;
+    --secondary: #555;
+    --bgcolor: #fff;
+    --lightgray: #ddd;
+    --darkgray: #999;
+    --accent: #8A2BE2;
+    --fz-label: 12px;
+    --fz-body: minmax(14px, 16px);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+*{
+margin: 0;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: var(--primary);
+    font-size: var(--fz-body);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+.section{
+    padding: 80px 16px;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h2{
+
+    margin-bottom: 0;
+}
+
+.section__desc{
+    margin-bottom: 1rem;
+}
+
+.header{
+    background: linear-gradient(to bottom, #333, #777);
+    color: var(--bgcolor);
+    position: sticky;
+    top: 0;
+}
+
+.navbar__list{
+    display: flex;
+}
+
+.navbar__link{
+    display: inline-block;
+    color: var(--bgcolor);
+    text-transform: uppercase;
+    padding: 16px 16px;
+    transition: all .5s ease;
+}
+
+.navbar__link:hover{
+    color: var(--lightgray);
+    background-color: var(--darkgray);
+}
+
+.slide{
+    position: relative;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.slide p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: var(--bgcolor);
+
+    color: var(--primary);
+    padding: .5rem 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+
+.heading{
+    font-size: 36px;
+}
+
+.heading-desc{
+    font-size: 14px;
+    color: var(--secondary);
+}
+.heading2{
+    font-size: 28px;
+}
+
+.label{
+    font-size: 11px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.band__members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.band__members img{
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.tour{
+    background-color: var(--primary);
+}
+
+.tour .heading, .tour .heading-desc{
+    color: var(--bgcolor);
+}
+
+.slots__section{
+    margin: 20px 0;
+}
+.slots{
+    display: flex;
+    background-color: var(--bgcolor);
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary);
+
+}
+
+.slots .highlight{
+    background-color: var(--accent);
+    color: var(--bgcolor);
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+    font-size: var(--fz-label);
+    margin-left: 1rem;
+}
+
+
+.tour .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour-location{
+    width: 100%;
+    background-color: var(--bgcolor);
+}
+.tour img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.tour-date{
+    color: var(--darkgray);
+    font-size: var(--fz-label);
+}
+
+
+
+.btn-buy-tickets{
+    background-color: var(--primary);
+    color: var(--bgcolor);
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0 20px;
+    font-size: var(--fz-label);
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-buy-tickets:hover{
+    background-color: var(--secondary);
+}
+
+.contact-address{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+p.contact-method{
+    display: inline-block;
+}
+
+.contact-form{
+    margin: 0;
+}
+
+.contact-form input:not([type="submit"]){
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .4rem .6rem;
+    border: 1px solid var(--lightgray);
+    border-radius: .25rem;
+}
+
+.text-right{
+    display: block;
+    text-align: right;
+}
+
+.contact-form input[type="submit"]{
+    background-color: var(--primary);
+    color: var(--bgcolor);
+    display: inline-block;
+    padding: .3rem .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: var(--secondary);
+}
+
+img.location{
+    width: 100%;
+}
+
+
+footer{
+    padding: 50px;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+
+    .heading{
+        font-size: 42px;
+    }
+
+    .tour .row{
+        flex-direction: row;
+
+    }
+
+    .tour img{
+        min-height: 300px;
+    }
+
+    .contact .row{
+        display: flex;
+        gap: .5rem;
+    }
+
+
+
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+
+    .heading{
+        font-size: 48px;
+    }
+}
+
