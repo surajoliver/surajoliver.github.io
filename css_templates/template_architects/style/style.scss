@@ -1,3 +1,9 @@
+:root{
+    --primary: #333;
+    --bgcolor: #fff;
+    --mediumgray: #999;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&family=Roboto:wght@400;700&display=swap');
 
 *,
@@ -118,28 +124,7 @@ section {
 
 
 
-// @media (min-width: 600px) {
-//     .architect {
-//         width: 45%;
-//     }
-// }
 
-// @media (min-width: 900px) {
-//     .architect {
-//         width: 22%;
-//     }
-// }
-// .projects {
-//     displa : flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     width: 10rem;
-//     height: 10rem;
-
-//     // .project-detl {
-//     //     position: absolute;
-//     // }
-// }
 
 
 .about {
